@@ -12,6 +12,9 @@
 
 - Adjust the path to the SQL Server data directory mount in `compose.yml`
 
+- To run the `sqlserver-clerk-watcher` you need `cargo` (Rust) installed. Refer to the [Rust Installation guide](https://doc.rust-lang.org/cargo/getting-started/installation.html) for installation details for your platform (MacOS/Windows). Use the  `cargo run sqlserver-clerk-watcher/sqlserver-memclerk-watcher` command to gather watcher data for 1 minute.
+
 ## Diagrams
 
 Memory Management Components high-level overview: [Excalidraw](https://excalidraw.com/#json=jtAuQlUFMvC6lkxzNJcIc,aepJk-KGtOSBrt6wJW_M5w)
+
