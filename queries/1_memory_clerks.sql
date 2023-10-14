@@ -15,6 +15,9 @@ ORDER BY
     [type],
     [name]
 
+-- memory brokers
+SELECT * FROM sys.dm_os_ring_buffers WHERE ring_buffer_type = 'RING_BUFFER_MEMORY_BROKER';
+
 -- lets see the beefiest clerks
 SELECT
     [type],
