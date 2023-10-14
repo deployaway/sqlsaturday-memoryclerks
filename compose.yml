@@ -1,0 +1,14 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver-memory-clerks-sqlserver
+    volumes:
+      - /Volumes/LaCie/data/sqlserver_mnt:/sqlserverdata
+    ports:
+        - "1433:1433"
+    environment:
+      - SA_PASSWORD=Memory@Clerks
+      - ACCEPT_EULA=Y
+    mem_reservation: "4G"
+    mem_limit: "8G"
+    cpus: "8"
