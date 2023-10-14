@@ -29,8 +29,8 @@ async fn main() {
             let _ = csv_file_writer.flush();
             append_counter += 1;
 
-            // 120 appends at 500 ms = 1 minute
-            if append_counter > 120 {
+            // 120 appends at 500 ms = 2 minutes
+            if append_counter > 240 {
                 break;
             }
         }

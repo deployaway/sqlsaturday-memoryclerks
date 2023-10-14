@@ -5,3 +5,6 @@ CREATE DATABASE StackOverflow
     (FILENAME = '/sqlserverdata/StackOverflow_4.ndf'),
     (FILENAME = '/sqlserverdata/StackOverflow_log.ldf')
 FOR ATTACH;
+
+
+SELECT * FROM [sys].[dm_tcp_listener_states]

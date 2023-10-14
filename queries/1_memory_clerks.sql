@@ -41,7 +41,7 @@ SELECT
     SUM(virtual_memory_committed_kb) as virtual_memory_committed_kb,
     SUM(pages_kb * 1024 / page_size_in_bytes) AS [page_count]
 FROM
-    sys.dm_os_memory_clerks
+    sys.dm_os_memory_clerks WITH (NOLOCK)
 GROUP BY 
     [type]
 ORDER BY
