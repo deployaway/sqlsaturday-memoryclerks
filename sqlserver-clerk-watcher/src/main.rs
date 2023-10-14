@@ -1,4 +1,4 @@
-use std::{fs::OpenOptions, time::{self, Duration}};
+use std::{fs::OpenOptions, time::Duration};
 
 use anyhow::anyhow;
 use tiberius::{Client, Config, AuthMethod, time::time::PrimitiveDateTime};
